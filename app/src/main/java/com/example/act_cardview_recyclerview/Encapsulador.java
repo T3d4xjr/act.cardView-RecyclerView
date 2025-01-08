@@ -1,31 +1,32 @@
 package com.example.act_cardview_recyclerview;
 
 public class Encapsulador {
-    private String textoTitulo;
-    private String descripcion;
     private int imagen;
-    public Encapsulador(String textoTitulo, String descripcion, int imagen) {
+    private String descripcion;
+    private String textoTitulo;
+    public Encapsulador(int imagen, String textoTitulo, String descripcion) {
+        this.imagen = imagen;
         this.textoTitulo = textoTitulo;
         this.descripcion = descripcion;
-        this.imagen = imagen;
     }
-    public String getTextoTitulo() {
-        return textoTitulo;
+    public int getImagen() {
+        return imagen;
     }
     public String getDescripcion() {
         return descripcion;
         }
-    public int getImagen() {
-        return imagen;
+    public String getTextoTitulo() {
+        return textoTitulo;
+    }
+    public void setImagen(int imagen) {
+        this.imagen = imagen;
+    }
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
     public void setTextoTitulo(String textoTitulo) {
         this.textoTitulo = textoTitulo;
     }
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-        }
-    public void setImagen(int imagen) {
-        this.imagen = imagen;
-    }
+
 
 }
